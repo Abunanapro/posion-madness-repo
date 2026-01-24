@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "poison_madness:advancement_item_1"
+    },
+    "title": {
+      "translate": "advancements.taste_the_rainbow.title"
+    },
+    "description": {
+      "translate": "advancements.taste_the_rainbow.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "taste_the_rainbow": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  }
+}

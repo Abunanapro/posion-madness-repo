@@ -1,0 +1,101 @@
+{
+  "frogambient": {
+    "subtitle": "subtitles.frogambient",
+    "sounds": [
+      {
+        "name": "poison_madness:ambient1",
+        "stream": false
+      },
+      {
+        "name": "poison_madness:ambient2",
+        "stream": false
+      },
+      {
+        "name": "poison_madness:ambient4",
+        "stream": false
+      },
+      {
+        "name": "poison_madness:ambient3",
+        "stream": false
+      }
+    ]
+  },
+  "hurtfrog": {
+    "subtitle": "subtitles.hurtfrog",
+    "sounds": [
+      {
+        "name": "poison_madness:hurt1",
+        "stream": false
+      },
+      {
+        "name": "poison_madness:hurt3",
+        "stream": false
+      },
+      {
+        "name": "poison_madness:hurt2",
+        "stream": false
+      }
+    ]
+  },
+  "frogdeath": {
+    "subtitle": "subtitles.frogdeath",
+    "sounds": [
+      {
+        "name": "poison_madness:death2",
+        "stream": false
+      },
+      {
+        "name": "poison_madness:death1",
+        "stream": false
+      }
+    ]
+  },
+  "empty": {
+    "sounds": [
+      {
+        "name": "poison_madness:empty1",
+        "stream": false
+      }
+    ]
+  },
+  "fillfrogbowl": {
+    "sounds": [
+      {
+        "name": "poison_madness:fill1",
+        "stream": false
+      }
+    ]
+  },
+  "hypersalivation_audio": {
+    "sounds": [
+      {
+        "name": "poison_madness:hypersalivationaudio",
+        "stream": false
+      }
+    ]
+  },
+  "hypersalivation_not_salivated": {
+    "sounds": [
+      {
+        "name": "poison_madness:not_digestedsalivation",
+        "stream": false
+      }
+    ]
+  },
+  "throwdart": {
+    "sounds": [
+      {
+        "name": "poison_madness:throw1",
+        "stream": false
+      }
+    ]
+  },
+  "coatdart": {
+    "sounds": [
+      {
+        "name": "poison_madness:coat1",
+        "stream": false
+      }
+    ]
+  }
+}

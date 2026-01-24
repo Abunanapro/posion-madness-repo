@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:JustUsedForTexture"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "CUSTOM:throwdart"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 1.9,
+    "knockback": 1,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsEntity": {
+      "name": "DartProjectileHitsLivingEntity"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "jungle",
+    "bamboo_jungle",
+    "sparse_jungle"
+  ],
+  "spawners": {
+    "type": "poison_madness:poison_frog_green",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

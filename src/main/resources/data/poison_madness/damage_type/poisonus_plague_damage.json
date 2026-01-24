@@ -1,0 +1,6 @@
+{
+  "exhaustion": 0.1,
+  "message_id": "poisonus_plague_damage",
+  "scaling": "never",
+  "effects": "drowning"
+}

@@ -1,0 +1,4653 @@
+{
+  "mod_elements": [
+    {
+      "name": "PickYourPoison",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pick_your_poison",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "PoisonFrogGolden",
+      "type": "animatedentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_golden",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogGoldenModel.java",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_golden_biome_modifier.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogGoldenRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogGoldenEntity.java",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_golden_spawn_egg.json"
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "Batrachotoxin",
+      "type": "potioneffect",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batrachotoxin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/BatrachotoxinMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "BatrachotoxinGuiDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batrachotoxin_gui_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/BatrachotoxinGuiDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "BatrachotoxinGui",
+      "type": "overlay",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batrachotoxin_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/screens/BatrachotoxinGuiOverlay.java"
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "BatrachotoxinOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batrachotoxin_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/BatrachotoxinOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "Batrachotoxindamage",
+      "type": "damagetype",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batrachotoxindamage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/damage_type/batrachotoxindamage.json"
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "PoisonFrogBlue",
+      "type": "animatedentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_blue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogBlueRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogBlueEntity.java",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_blue_spawn_egg.json",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_blue_biome_modifier.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogBlueModel.java"
+        ]
+      },
+      "path": "~/Frogs/Blue"
+    },
+    {
+      "name": "GoldenFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/GoldenFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "GoldenFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/GoldenFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "GoldenFrogBowl",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/golden_frog_bowl.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/item/GoldenFrogBowlItem.java"
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "PoisonFrogGoldenRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_golden_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogGoldenRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "PoisonFrogGoldenEntityIsHurt",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_golden_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogGoldenEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "Coma",
+      "type": "potioneffect",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coma",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/ComaMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/Blue"
+    },
+    {
+      "name": "ComaOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coma_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/ComaOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "ComaOverlay",
+      "type": "overlay",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coma_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/screens/ComaOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "ComaOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coma_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/ComaOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Frogs/Blue"
+    },
+    {
+      "name": "PlayerhurtDeletecoma",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerhurt_deletecoma",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PlayerhurtDeletecomaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Blue"
+    },
+    {
+      "name": "BlueFrogBowl",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/blue_frog_bowl.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/item/BlueFrogBowlItem.java"
+        ]
+      },
+      "path": "~/Frogs/Blue"
+    },
+    {
+      "name": "Bluefrogempty",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bluefrogempty",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/BluefrogemptyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Blue"
+    },
+    {
+      "name": "FillBlueFrog",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fill_blue_frog",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/FillBlueFrogProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Blue"
+    },
+    {
+      "name": "BlueFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/BlueFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Blue"
+    },
+    {
+      "name": "PoisonFrogBlueEntityIsHurt",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_blue_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogBlueEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Blue"
+    },
+    {
+      "name": "PoisonFrogOrange",
+      "type": "animatedentity",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_orange",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogOrangeEntity.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogOrangeModel.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogOrangeRenderer.java",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_orange_biome_modifier.json",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_orange_spawn_egg.json"
+        ]
+      },
+      "path": "~/Frogs/orange"
+    },
+    {
+      "name": "Vulnerability",
+      "type": "potioneffect",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vulnerability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/VulnerabilityMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/orange"
+    },
+    {
+      "name": "Moredamagevul",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moredamagevul",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/MoredamagevulProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Frogs/orange"
+    },
+    {
+      "name": "OrangeFrogBowl",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/orange_frog_bowl.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/item/OrangeFrogBowlItem.java"
+        ]
+      },
+      "path": "~/Frogs/orange"
+    },
+    {
+      "name": "FillOrangeFrog",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fill_orange_frog",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/FillOrangeFrogProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/orange"
+    },
+    {
+      "name": "OrangeEmpty",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_empty",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/OrangeEmptyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/orange"
+    },
+    {
+      "name": "PoisonFrogOrangeEntityIsHurt",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_orange_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogOrangeEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/orange"
+    },
+    {
+      "name": "OrangeFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/OrangeFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/orange"
+    },
+    {
+      "name": "PoisonFrogCrimson",
+      "type": "animatedentity",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_crimson",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogCrimsonModel.java",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_crimson_spawn_egg.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogCrimsonRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogCrimsonEntity.java",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_crimson_biome_modifier.json"
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "Torpor",
+      "type": "potioneffect",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torpor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/TorporMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "Torporeffanulateheal",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torporeffanulateheal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/TorporeffanulatehealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "TorporOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torpor_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/TorporOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "PoisonFrogCrimsonEntityIsHurt",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_crimson_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogCrimsonEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "CrimsonFrogBowl",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/CrimsonFrogBowlItem.java",
+          "src/main/resources/assets/poison_madness/models/item/crimson_frog_bowl.json"
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "CrimsonFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/CrimsonFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "CrimsonFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/CrimsonFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "PoisonFrogCrimsonRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_crimson_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogCrimsonRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "TorporHUD",
+      "type": "overlay",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torpor_hud",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/screens/TorporHUDOverlay.java"
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "TorporHUDDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torpor_hud_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/TorporHUDDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "PoisonFrogRed",
+      "type": "animatedentity",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_red",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_red_biome_modifier.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogRedModel.java",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_red_spawn_egg.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogRedRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogRedEntity.java"
+        ]
+      },
+      "path": "~/Frogs/Red"
+    },
+    {
+      "name": "Stimulation",
+      "type": "potioneffect",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stimulation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/StimulationMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/Red"
+    },
+    {
+      "name": "StimulationEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stimulation_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/StimulationEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Red"
+    },
+    {
+      "name": "StimulationOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stimulation_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/StimulationOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Red"
+    },
+    {
+      "name": "StimulationDamage",
+      "type": "damagetype",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stimulation_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/damage_type/stimulation_damage.json"
+        ]
+      },
+      "path": "~/Frogs/Red"
+    },
+    {
+      "name": "RedFrogBowl",
+      "type": "item",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/red_frog_bowl.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/item/RedFrogBowlItem.java"
+        ]
+      },
+      "path": "~/Frogs/Red"
+    },
+    {
+      "name": "RedFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/RedFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Red"
+    },
+    {
+      "name": "RedFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/RedFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Red"
+    },
+    {
+      "name": "PoisonFrogRedRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_red_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogRedRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Red"
+    },
+    {
+      "name": "PoisonFrogRedEntityIsHurt",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_red_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogRedEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Red"
+    },
+    {
+      "name": "PoisonFrogGreen",
+      "type": "animatedentity",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_green",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogGreenEntity.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogGreenRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogGreenModel.java",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_green_spawn_egg.json",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_green_biome_modifier.json"
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "Numbness",
+      "type": "potioneffect",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "numbness",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/NumbnessMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "NumbnessEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "numbness_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/NumbnessEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "NumbnessEffectExpires",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "numbness_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/NumbnessEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "DamageStacker",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_stacker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/DamageStackerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "HealingNullifyer",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_nullifyer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/HealingNullifyerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Crimson"
+    },
+    {
+      "name": "PoisonFrogGreenEntityIsHurt",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_green_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogGreenEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "GeenFrogBowl",
+      "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geen_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/geen_frog_bowl.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/item/GeenFrogBowlItem.java"
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "GeenFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geen_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/GeenFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "GeenFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geen_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/GeenFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "PoisonFrogGreenRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_green_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogGreenRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "PoisonFrogPink",
+      "type": "animatedentity",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_pink",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_pink_spawn_egg.json",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_pink_biome_modifier.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogPinkModel.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogPinkEntity.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogPinkRenderer.java"
+        ]
+      },
+      "path": "~/Frogs/Pink"
+    },
+    {
+      "name": "GreenHUD",
+      "type": "overlay",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_hud",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/screens/GreenHUDOverlay.java"
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "GreenHUDDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_hud_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/GreenHUDDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "ConfusionOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "confusion_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/ConfusionOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Pink"
+    },
+    {
+      "name": "Confusion",
+      "type": "potioneffect",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "confusion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/ConfusionMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/Pink"
+    },
+    {
+      "name": "PoisonFrogPinkEntityIsHurt",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_pink_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogPinkEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Pink"
+    },
+    {
+      "name": "PinkFrogBowl",
+      "type": "item",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/PinkFrogBowlItem.java",
+          "src/main/resources/assets/poison_madness/models/item/pink_frog_bowl.json"
+        ]
+      },
+      "path": "~/Frogs/Pink"
+    },
+    {
+      "name": "PinkFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PinkFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Pink"
+    },
+    {
+      "name": "PinkFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PinkFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Pink"
+    },
+    {
+      "name": "PoisonFrogPinkRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_pink_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogPinkRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Pink"
+    },
+    {
+      "name": "PoisonFrogDark",
+      "type": "animatedentity",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_dark",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_dark_biome_modifier.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogDarkRenderer.java",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_dark_spawn_egg.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogDarkModel.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogDarkEntity.java"
+        ]
+      },
+      "path": "~/Frogs/Dark"
+    },
+    {
+      "name": "PoisonFrogViolet",
+      "type": "animatedentity",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_violet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogVioletRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogVioletModel.java",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_violet_spawn_egg.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogVioletEntity.java",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_violet_biome_modifier.json"
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "HypersalivationOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypersalivation_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/HypersalivationOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "Hypersalivation",
+      "type": "potioneffect",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypersalivation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/HypersalivationMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "Hypersalivationinstanteat",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypersalivationinstanteat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/HypersalivationinstanteatProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "ExtremeSalivation",
+      "type": "damagetype",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extreme_salivation",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/damage_type/extreme_salivation.json"
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "Backlash",
+      "type": "damagetype",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backlash",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/damage_type/backlash.json"
+        ]
+      },
+      "path": "~/Frogs/Green"
+    },
+    {
+      "name": "VioletFrogBowl",
+      "type": "item",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "violet_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/violet_frog_bowl.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/item/VioletFrogBowlItem.java"
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "VioletFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "violet_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/VioletFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "VioletFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "violet_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/VioletFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "PoisonFrogVioletEntityIsHurt",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_violet_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogVioletEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "PoisonFrogVioletRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_violet_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogVioletRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "Leach",
+      "type": "potioneffect",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leach",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/LeachMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/Dark"
+    },
+    {
+      "name": "LifeLeacher",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_leacher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/LifeLeacherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Frogs/Dark"
+    },
+    {
+      "name": "LeachOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leach_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/LeachOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Dark"
+    },
+    {
+      "name": "DarkFrogBowl",
+      "type": "item",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/dark_frog_bowl.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/item/DarkFrogBowlItem.java"
+        ]
+      },
+      "path": "~/Frogs/Dark"
+    },
+    {
+      "name": "DarkFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/DarkFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Dark"
+    },
+    {
+      "name": "DarkFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/DarkFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Dark"
+    },
+    {
+      "name": "PoisonFrogDarkRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_dark_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogDarkRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/Dark"
+    },
+    {
+      "name": "PoisonFrogDarkEntityIsHurt",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_dark_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogDarkEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Dark"
+    },
+    {
+      "name": "CyanFrogBowl",
+      "type": "item",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyan_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/CyanFrogBowlItem.java",
+          "src/main/resources/assets/poison_madness/models/item/cyan_frog_bowl.json"
+        ]
+      },
+      "path": "~/Frogs/cyan"
+    },
+    {
+      "name": "PoisonFrogCyan",
+      "type": "animatedentity",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_cyan",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_cyan_biome_modifier.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogCyanModel.java",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_cyan_spawn_egg.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogCyanEntity.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogCyanRenderer.java"
+        ]
+      },
+      "path": "~/Frogs/cyan"
+    },
+    {
+      "name": "ThermogenesisOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermogenesis_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/ThermogenesisOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/cyan"
+    },
+    {
+      "name": "Thermogenesis",
+      "type": "potioneffect",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermogenesis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/ThermogenesisMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/cyan"
+    },
+    {
+      "name": "ThermogenesisDamage",
+      "type": "damagetype",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermogenesis_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/damage_type/thermogenesis_damage.json"
+        ]
+      },
+      "path": "~/Frogs/cyan"
+    },
+    {
+      "name": "CyanFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyan_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/CyanFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/cyan"
+    },
+    {
+      "name": "CyanFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyan_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/CyanFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/cyan"
+    },
+    {
+      "name": "PoisonFrogCyanRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_cyan_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogCyanRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/cyan"
+    },
+    {
+      "name": "PoisonFrogCyanEntityIsHurt",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_cyan_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogCyanEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/cyan"
+    },
+    {
+      "name": "PoisonFrogCommon",
+      "type": "animatedentity",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_common",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogCommonRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogCommonModel.java",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_common_spawn_egg.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogCommonEntity.java",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_common_biome_modifier.json"
+        ]
+      },
+      "path": "~/Frogs/CommonFrog"
+    },
+    {
+      "name": "CommonFrogBowl",
+      "type": "item",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "common_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/CommonFrogBowlItem.java",
+          "src/main/resources/assets/poison_madness/models/item/common_frog_bowl.json"
+        ]
+      },
+      "path": "~/Frogs/CommonFrog"
+    },
+    {
+      "name": "CommonFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "common_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/CommonFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/CommonFrog"
+    },
+    {
+      "name": "PoisonFrogCommonRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_common_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogCommonRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/CommonFrog"
+    },
+    {
+      "name": "ToxinOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxin_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/ToxinOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/CommonFrog"
+    },
+    {
+      "name": "ToxinEffectExpires",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxin_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/ToxinEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/CommonFrog"
+    },
+    {
+      "name": "Toxin",
+      "type": "potioneffect",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/ToxinMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/CommonFrog"
+    },
+    {
+      "name": "PoisonFrogCommonEntityIsHurt",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_common_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogCommonEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/CommonFrog"
+    },
+    {
+      "name": "CommonFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "common_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/CommonFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/CommonFrog"
+    },
+    {
+      "name": "PoisonFrogDarkPurple",
+      "type": "animatedentity",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_dark_purple",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_dark_purple_spawn_egg.json",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_dark_purple_biome_modifier.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogDarkPurpleEntity.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogDarkPurpleModel.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogDarkPurpleRenderer.java"
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "NeurotoxinOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neurotoxin_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/NeurotoxinOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "Neurotoxin",
+      "type": "potioneffect",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neurotoxin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/NeurotoxinMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "NeuroToxinGuiDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neuro_toxin_gui_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/NeuroToxinGuiDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "NeuroToxinGui",
+      "type": "overlay",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neuro_toxin_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/screens/NeuroToxinGuiOverlay.java"
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "DarkPurpleFrogBowl",
+      "type": "item",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_purple_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/dark_purple_frog_bowl.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/item/DarkPurpleFrogBowlItem.java"
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "DarkPurpleFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_purple_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/DarkPurpleFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "DarkPurpleFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_purple_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/DarkPurpleFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "PoisonFrogDarkPurpleRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_dark_purple_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogDarkPurpleRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "PoisonFrogDarkPurpleEntityIsHurt",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_dark_purple_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogDarkPurpleEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "Neurologicaldmg",
+      "type": "damagetype",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neurologicaldmg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/damage_type/neurologicaldmg.json"
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "NeurotoxinEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neurotoxin_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/NeurotoxinEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "NeurotoxinEffectExpires",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neurotoxin_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/NeurotoxinEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "ReturnTimeLeft",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_time_left_stomachnumbness",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/ReturnTimeLeftProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/DarkPurple"
+    },
+    {
+      "name": "PoisonFrogYellow",
+      "type": "animatedentity",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_yellow",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_yellow_biome_modifier.json",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_yellow_spawn_egg.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogYellowRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogYellowModel.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogYellowEntity.java"
+        ]
+      },
+      "path": "~/Frogs/yellow"
+    },
+    {
+      "name": "YellowFrogBowl",
+      "type": "item",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/YellowFrogBowlItem.java",
+          "src/main/resources/assets/poison_madness/models/item/yellow_frog_bowl.json"
+        ]
+      },
+      "path": "~/Frogs/yellow"
+    },
+    {
+      "name": "PoisonFrogYellowRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_yellow_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogYellowRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/yellow"
+    },
+    {
+      "name": "YellowFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/YellowFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/yellow"
+    },
+    {
+      "name": "ReanimatingToxin",
+      "type": "potioneffect",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reanimating_toxin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/ReanimatingToxinMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/yellow"
+    },
+    {
+      "name": "Evadedeath",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evadedeath",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/EvadedeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/yellow"
+    },
+    {
+      "name": "PoisonFrogYellowEntityIsHurt",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_yellow_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogYellowEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/yellow"
+    },
+    {
+      "name": "YellowFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/YellowFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/yellow"
+    },
+    {
+      "name": "LizardBlack",
+      "type": "animatedentity",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lizard_black",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/lizard_black_spawn_egg.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/LizardBlackModel.java",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/lizard_black_biome_modifier.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/LizardBlackRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/LizardBlackEntity.java"
+        ]
+      },
+      "path": "~/lizards/Black"
+    },
+    {
+      "name": "PoisonusPlague",
+      "type": "potioneffect",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poisonus_plague",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/PoisonusPlagueMobEffect.java"
+        ]
+      },
+      "path": "~/lizards/Black"
+    },
+    {
+      "name": "PoisonusPlagueDamage",
+      "type": "damagetype",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poisonus_plague_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/damage_type/poisonus_plague_damage.json"
+        ]
+      },
+      "path": "~/lizards/Black"
+    },
+    {
+      "name": "PoisonusPlagueOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poisonus_plague_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonusPlagueOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lizards/Black"
+    },
+    {
+      "name": "InfectPoisonuseplague",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infect_poisonuseplague",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/InfectPoisonuseplagueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lizards/Black"
+    },
+    {
+      "name": "LizardBlackEntityIsHurt",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lizard_black_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/LizardBlackEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lizards/Black"
+    },
+    {
+      "name": "BlackLizardBowl",
+      "type": "item",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_lizard_bowl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/BlackLizardBowlItem.java",
+          "src/main/resources/assets/poison_madness/models/item/black_lizard_bowl.json"
+        ]
+      },
+      "path": "~/lizards/Black"
+    },
+    {
+      "name": "BlackLizardBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_lizard_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/BlackLizardBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lizards/Black"
+    },
+    {
+      "name": "BlackLizardBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_lizard_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/BlackLizardBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lizards/Black"
+    },
+    {
+      "name": "LizardBlackRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lizard_black_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/LizardBlackRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lizards/Black"
+    },
+    {
+      "name": "GreenToad",
+      "type": "animatedentity",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_toad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/GreenToadEntity.java",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/green_toad_biome_modifier.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/GreenToadRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/GreenToadModel.java",
+          "src/main/resources/assets/poison_madness/models/item/green_toad_spawn_egg.json"
+        ]
+      },
+      "path": "~/toads/Green"
+    },
+    {
+      "name": "GreenToadBowl",
+      "type": "item",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_toad_bowl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/GreenToadBowlItem.java",
+          "src/main/resources/assets/poison_madness/models/item/green_toad_bowl.json"
+        ]
+      },
+      "path": "~/toads/Green"
+    },
+    {
+      "name": "GreenToadRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_toad_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/GreenToadRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/toads/Green"
+    },
+    {
+      "name": "GreenToadBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_toad_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/GreenToadBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/toads/Green"
+    },
+    {
+      "name": "GrillLungs",
+      "type": "potioneffect",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grill_lungs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/GrillLungsMobEffect.java"
+        ]
+      },
+      "path": "~/toads/Green"
+    },
+    {
+      "name": "GrillLungsOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grill_lungs_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/GrillLungsOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/toads/Green"
+    },
+    {
+      "name": "GreenToadEntityIsHurt",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_toad_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/GreenToadEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/toads/Green"
+    },
+    {
+      "name": "GreenToadBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_toad_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/GreenToadBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/toads/Green"
+    },
+    {
+      "name": "SpiderBlack",
+      "type": "animatedentity",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_black",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/forge/biome_modifier/spider_black_biome_modifier.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/SpiderBlackRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/SpiderBlackModel.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/SpiderBlackEntity.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/layer/SpiderBlackLayer.java",
+          "src/main/resources/assets/poison_madness/models/item/spider_black_spawn_egg.json"
+        ]
+      },
+      "path": "~/spider/Black"
+    },
+    {
+      "name": "HyperfixationOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hyperfixation_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/HyperfixationOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/spider/Black"
+    },
+    {
+      "name": "Hyperfixation",
+      "type": "potioneffect",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hyperfixation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/HyperfixationMobEffect.java"
+        ]
+      },
+      "path": "~/spider/Black"
+    },
+    {
+      "name": "Hyperfix",
+      "type": "overlay",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hyperfix",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/screens/HyperfixOverlay.java"
+        ]
+      },
+      "path": "~/spider/Black"
+    },
+    {
+      "name": "HyperfixDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hyperfix_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/HyperfixDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/spider/Black"
+    },
+    {
+      "name": "SpiderBlackEntityIsHurt",
+      "type": "procedure",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_black_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/SpiderBlackEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/spider/Black"
+    },
+    {
+      "name": "Dart",
+      "type": "projectile",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/DartEntity.java"
+        ]
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "Dartstadart",
+      "type": "item",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dartstadart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/dartstadart.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/item/DartstadartItem.java",
+          "src/main/resources/assets/poison_madness/models/item/dartstadart_0.json"
+        ]
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "CoatedDart",
+      "type": "item",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coated_dart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/CoatedDartItem.java",
+          "src/main/resources/assets/poison_madness/models/item/coated_dart.json"
+        ]
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "CoatedDartRightclicked",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coated_dart_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/CoatedDartRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "DartProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dart_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/DartProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "EffAplyer",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eff_aplyer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/EffAplyerProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "DartWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dart_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/DartWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "DartstadartPropertyValueProvider",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dartstadart_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/DartstadartPropertyValueProviderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "DartstadartItemInHandTick",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dartstadart_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/DartstadartItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "JustUsedForTexture",
+      "type": "item",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "just_used_for_texture",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/JustUsedForTextureItem.java",
+          "src/main/resources/assets/poison_madness/models/item/just_used_for_texture.json"
+        ]
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "Coated",
+      "type": "enchantment",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coated",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/enchantment/CoatedEnchantment.java"
+        ]
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "AdvancementItem1",
+      "type": "item",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancement_item_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/AdvancementItem1Item.java",
+          "src/main/resources/assets/poison_madness/models/item/advancement_item_1.json"
+        ]
+      },
+      "path": "~/advancements"
+    },
+    {
+      "name": "TasteTheRainbow",
+      "type": "achievement",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taste_the_rainbow",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/advancements/taste_the_rainbow.json"
+        ]
+      },
+      "path": "~/advancements"
+    },
+    {
+      "name": "Advancement2",
+      "type": "item",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancement_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/Advancement2Item.java",
+          "src/main/resources/assets/poison_madness/models/item/advancement_2.json"
+        ]
+      },
+      "path": "~/advancements"
+    },
+    {
+      "name": "DartMakin",
+      "type": "achievement",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dart_makin",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/advancements/dart_makin.json"
+        ]
+      },
+      "path": "~/advancements"
+    },
+    {
+      "name": "PoisonedFood",
+      "type": "procedure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poisoned_food",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonedFoodProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/sus food"
+    },
+    {
+      "name": "BlackSpiderBowl",
+      "type": "item",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_spider_bowl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/BlackSpiderBowlItem.java",
+          "src/main/resources/assets/poison_madness/models/item/black_spider_bowl.json"
+        ]
+      },
+      "path": "~/spider/Black"
+    },
+    {
+      "name": "BlackSpiderBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_spider_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/BlackSpiderBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/spider/Black"
+    },
+    {
+      "name": "BlackSpiderBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_spider_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/BlackSpiderBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/spider/Black"
+    },
+    {
+      "name": "SpiderBlackRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_black_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/SpiderBlackRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/spider/Black"
+    },
+    {
+      "name": "RitualTableCenterUpdateTick",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ritual_table_center_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/RitualTableCenterUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rituals"
+    },
+    {
+      "name": "RitualTableCenter",
+      "type": "block",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ritual_table_center",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/block/ritual_table_center.json",
+          "src/main/resources/assets/poison_madness/models/item/ritual_table_center.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/block/RitualTableCenterBlock.java",
+          "src/main/resources/assets/poison_madness/blockstates/ritual_table_center.json"
+        ]
+      },
+      "path": "~/Rituals"
+    },
+    {
+      "name": "PoisonFrogRedWhite",
+      "type": "animatedentity",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_red_white",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/PoisonFrogRedWhiteModel.java",
+          "src/main/resources/assets/poison_madness/models/item/poison_frog_red_white_spawn_egg.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/PoisonFrogRedWhiteRenderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/PoisonFrogRedWhiteEntity.java",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/poison_frog_red_white_biome_modifier.json"
+        ]
+      },
+      "path": "~/Frogs/RedWhite"
+    },
+    {
+      "name": "RedWhiteFrogBowl",
+      "type": "item",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_white_frog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/RedWhiteFrogBowlItem.java",
+          "src/main/resources/assets/poison_madness/models/item/red_white_frog_bowl.json"
+        ]
+      },
+      "path": "~/Frogs/RedWhite"
+    },
+    {
+      "name": "RedWhiteFrogBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_white_frog_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/RedWhiteFrogBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Frogs/RedWhite"
+    },
+    {
+      "name": "ConfusionScreenDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "confusion_screen_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/ConfusionScreenDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Pink"
+    },
+    {
+      "name": "ConfusionScreen",
+      "type": "overlay",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "confusion_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/screens/ConfusionScreenOverlay.java"
+        ]
+      },
+      "path": "~/Frogs/Pink"
+    },
+    {
+      "name": "HypersalivScreen",
+      "type": "overlay",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypersaliv_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/screens/HypersalivScreenOverlay.java"
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "ToxinScreenDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxin_screen_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/ToxinScreenDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/CommonFrog"
+    },
+    {
+      "name": "ToxinScreen",
+      "type": "overlay",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxin_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/screens/ToxinScreenOverlay.java"
+        ]
+      },
+      "path": "~/Frogs/CommonFrog"
+    },
+    {
+      "name": "Vanish",
+      "type": "potioneffect",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vanish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/VanishMobEffect.java"
+        ]
+      },
+      "path": "~/Frogs/RedWhite"
+    },
+    {
+      "name": "VanishEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vanish_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/VanishEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/RedWhite"
+    },
+    {
+      "name": "HypersalivScreenDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hypersaliv_screen_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/HypersalivScreenDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Violet"
+    },
+    {
+      "name": "PoisonFrogRedWhiteRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_red_white_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogRedWhiteRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Poison Dart"
+    },
+    {
+      "name": "PoisonFrogRedWhiteEntityIsHurt",
+      "type": "procedure",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_red_white_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogRedWhiteEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/RedWhite"
+    },
+    {
+      "name": "RedWhiteFrogBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_white_frog_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/RedWhiteFrogBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/RedWhite"
+    },
+    {
+      "name": "PoisonCraftTable",
+      "type": "block",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_craft_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/block/poison_craft_table.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/block/entity/PoisonCraftTableBlockEntity.java",
+          "src/main/resources/assets/poison_madness/blockstates/poison_craft_table.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/block/PoisonCraftTableBlock.java",
+          "src/main/resources/assets/poison_madness/models/item/poison_craft_table.json"
+        ]
+      },
+      "path": "~/Tables"
+    },
+    {
+      "name": "PoisonCraftGUI",
+      "type": "gui",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_craft_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/world/inventory/PoisonCraftGUIMenu.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/gui/PoisonCraftGUIScreen.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/network/PoisonCraftGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Tables"
+    },
+    {
+      "name": "Button",
+      "type": "procedure",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/ButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Tables"
+    },
+    {
+      "name": "Dartrecipy",
+      "type": "recipe",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dartrecipy",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/poison_madness/recipes/dartrecipy.json"
+        ]
+      },
+      "path": "~/Poison Dart"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "LastHungerStimulation",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "LastTickHunger",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "20.0"
+    },
+    {
+      "name": "LastHealthNumbness",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "LastTickHealth",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
+      "name": "DamageStackerNumbness",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "frogambient",
+      "files": [
+        "ambient1",
+        "ambient2",
+        "ambient4",
+        "ambient3"
+      ],
+      "category": "ambient",
+      "subtitle": "Frog ambient sound"
+    },
+    {
+      "name": "hurtfrog",
+      "files": [
+        "hurt1",
+        "hurt3",
+        "hurt2"
+      ],
+      "category": "ambient",
+      "subtitle": "frog hurt"
+    },
+    {
+      "name": "frogdeath",
+      "files": [
+        "death2",
+        "death1"
+      ],
+      "category": "ambient",
+      "subtitle": "frog death"
+    },
+    {
+      "name": "empty",
+      "files": [
+        "empty1"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "fillfrogbowl",
+      "files": [
+        "fill1"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "hypersalivation_audio",
+      "files": [
+        "hypersalivationaudio"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "hypersalivation_not_salivated",
+      "files": [
+        "not_digestedsalivation"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "throwdart",
+      "files": [
+        "throw1"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "coatdart",
+      "files": [
+        "coat1"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "entity.poison_madness.poison_frog_orange": "Poison Frog Orange",
+      "death.attack.extreme_salivation.item": "%1$s was killed of extreme salivation by %2$s using %3$s",
+      "death.attack.thermogenesis_damage.player": "%1$s died from termogenesis whilst trying to escape %2$s",
+      "item.poison_madness.lizard_black_spawn_egg": "Poison Lizard Black Spawn Egg",
+      "death.attack.neurologicaldmg": "%1$s \u0027s stomach got obliterated because of the backlash",
+      "item.poison_madness.red_white_frog_bowl": "Red-White Frog Bowl",
+      "item.poison_madness.poison_frog_violet_spawn_egg": "Poison Frog Violet Spawn Egg",
+      "item.poison_madness.poison_frog_dark_spawn_egg": "Poison Frog Dark Spawn Egg",
+      "death.attack.poisonus_plague_damage.item": "%1$s was killed from plague by %2$s using %3$s",
+      "effect.poison_madness.hyperfixation": "Hyperfixation",
+      "item.poison_madness.black_lizard_bowl": "Dark Lizard Bowl",
+      "effect.poison_madness.coma": "Coma",
+      "effect.poison_madness.hypersalivation": "Hypersalivation",
+      "effect.poison_madness.grill_lungs": "Grill Lungs",
+      "item.poison_madness.yellow_frog_bowl": "Yellow Frog Bowl",
+      "death.attack.stimulation_damage": "%1$s died of overstimulation",
+      "item_group.poison_madness.pick_your_poison": "Poison Madness",
+      "item.poison_madness.green_toad_spawn_egg": "Poison Frog Golden Spawn Egg",
+      "advancements.dart_makin.title": "Dart Crafter",
+      "item.seventh_ancient_ways_sub.poison_frog_golden_spawn_egg": "Poison Frog Golden Spawn Egg",
+      "item.poison_madness.orange_frog_bowl": "Orange Frog Bowl",
+      "block.poison_madness.ritual_table_center": "Ritual Table Center",
+      "death.attack.extreme_salivation.player": "%1$s died of extreme salivation whilst trying to escape %2$s",
+      "item.poison_madness.just_used_for_texture": "Just Used For Texture",
+      "advancements.taste_the_rainbow.descr": "Lick any frog",
+      "effect.poison_madness.leach": "Life Leach",
+      "effect.seventh_ancient_ways_sub.batrachotoxin": "batrachotoxin",
+      "entity.poison_madness.poison_frog_red": "Poison Frog Red",
+      "entity.poison_madness.lizard_black": "Poison Lizard Black",
+      "effect.poison_madness.stimulation": "Stimulation",
+      "death.attack.backlash.item": "%1$s was killed from backlash by %2$s using %3$s",
+      "item.poison_madness.poison_frog_dark_purple_spawn_egg": "Poison Frog Dark Purple Spawn Egg",
+      "subtitles.hypersalivation_not_salivated": "",
+      "item.poison_madness.advancement_item_1": "Advancement Item 1",
+      "item.poison_madness.poison_frog_green_spawn_egg": "Poison Frog Green Spawn Egg",
+      "effect.poison_madness.torpor": "Torpor",
+      "death.attack.extreme_salivation": "%1$s died of extreme salivation",
+      "item.seventh_ancient_ways_sub.poison_frog_blue_spawn_egg": "Poison Frog Blue Spawn Egg",
+      "item.poison_madness.red_frog_bowl": "Red Frog Bowl",
+      "item.poison_madness.crimson_frog_bowl": "Crimson Frog Bowl",
+      "item.poison_madness.poison_frog_common_spawn_egg": "Poison Frog Dark Green Spawn Egg",
+      "death.attack.neurologicaldmg.player": "%1$s died from stomach numbness whilst trying to escape %2$s",
+      "effect.poison_madness.numbness": "Numbness",
+      "enchantment.poison_madness.coated": "Coated",
+      "item.poison_madness.golden_frog_bowl": "Golden Frog Bowl",
+      "gui.poison_madness.poison_craft_gui.label_darts": "Darts",
+      "effect.poison_madness.poisonus_plague": "Poisonus Plague",
+      "entity.poison_madness.poison_frog_crimson": "Poison Frog Crimson",
+      "entity.seventh_ancient_ways_sub.poison_frog_golden": "Poison Frog Golden",
+      "death.attack.thermogenesis_damage.item": "%1$s was killed from termogenesis by %2$s using %3$s",
+      "gui.poison_madness.poison_craft_gui.label_poison_darts": "Poison Darts",
+      "entity.poison_madness.poison_frog_green": "Poison Frog Green",
+      "item.poison_madness.blue_frog_bowl": "Blue Frog Bowl",
+      "entity.poison_madness.poison_frog_yellow": "Poison Frog Yellow",
+      "effect.poison_madness.vulnerability": "Vulnerability",
+      "entity.poison_madness.poison_frog_violet": "Poison Frog Violet",
+      "item.poison_madness.green_toad_bowl": "Green Toad Bowl",
+      "block.poison_madness.poison_craft_table": "Poison Craft Table",
+      "subtitles.hurtfrog": "frog hurt",
+      "item.poison_madness.poison_frog_red_spawn_egg": "Poison Frog Red Spawn Egg",
+      "death.attack.batrachotoxindamage.player": "%1$s becouse of batrachotoxin while escaping %2$s",
+      "death.attack.stimulation_damage.player": "%1$s died of overstimulation whilst trying to escape %2$s",
+      "entity.poison_madness.poison_frog_red_white": "Poison Frog Red-White",
+      "effect.poison_madness.toxin": "Toxin",
+      "death.attack.batrachotoxindamage": "%1$s died died in severe pain because of batrachotoxin",
+      "death.attack.neurologicaldmg.item": "%1$s was killed from stomach numbness by %2$s using %3$s",
+      "item.poison_madness.dark_purple_frog_bowl": "Dark Purple Frog Bowl",
+      "item.poison_madness.cyan_frog_bowl": "Cyan Frog Bowl",
+      "entity.poison_madness.poison_frog_blue": "Poison Frog Blue",
+      "item.poison_madness.poison_frog_golden_spawn_egg": "Poison Frog Golden Spawn Egg",
+      "entity.poison_madness.poison_frog_pink": "Poison Frog Pink",
+      "subtitles.frogdeath": "frog death",
+      "item.poison_madness.advancement_2": "Advancement 2",
+      "death.attack.backlash.player": "%1$s died from backlash whilst trying to escape %2$s",
+      "advancements.dart_makin.descr": "Craft a Dart(you can right click any poisonus frog  to add their poison to this dart)",
+      "effect.poison_madness.reanimating_toxin": "Reanimation Toxin",
+      "subtitles.fillfrogbowl": "",
+      "item.poison_madness.dartstadart": "Dart",
+      "death.attack.batrachotoxindamage.item": "%1$s was killed by %2$s using batrachotoxin poison",
+      "death.attack.poisonus_plague_damage.player": "%1$s died from plague whilst trying to escape %2$s",
+      "item.poison_madness.geen_frog_bowl": "Green Frog Bowl",
+      "item.poison_madness.poison_frog_yellow_spawn_egg": "Poison Frog Yellow Spawn Egg",
+      "item.poison_madness.pink_frog_bowl": "Pink Frog Bowl",
+      "item.poison_madness.coated_dart": "Coated Dart",
+      "entity.seventh_ancient_ways_sub.poison_frog_blue": "Poison Frog Blue",
+      "effect.poison_madness.vanish": "Vanish",
+      "item.poison_madness.poison_frog_blue_spawn_egg": "Poison Frog Blue Spawn Egg",
+      "item.poison_madness.poison_frog_crimson_spawn_egg": "Poison Frog Crimson Spawn Egg",
+      "entity.poison_madness.poison_frog_dark": "Poison Frog Dark",
+      "item.poison_madness.spider_black_spawn_egg": "Spider Black Spawn Egg",
+      "effect.poison_madness.confusion": "Confusion",
+      "entity.poison_madness.poison_frog_cyan": "Poison Frog Cyan",
+      "entity.poison_madness.green_toad": "Poison Frog Golden",
+      "effect.poison_madness.batrachotoxin": "batrachotoxin",
+      "entity.poison_madness.spider_black": "Spider Black",
+      "entity.poison_madness.poison_frog_dark_purple": "Poison Frog Dark Purple",
+      "item.poison_madness.poison_frog_pink_spawn_egg": "Poison Frog Pink Spawn Egg",
+      "item.poison_madness.violet_frog_bowl": "Violet-Orange Frog Bowl",
+      "entity.poison_madness.poison_frog_golden": "Poison Frog Golden",
+      "death.attack.thermogenesis_damage": "%1$s body temperature went crazy and died",
+      "subtitles.throwdart": "",
+      "item.poison_madness.poison_frog_orange_spawn_egg": "Poison Frog Orange Spawn Egg",
+      "death.attack.poisonus_plague_damage": "%1$s died of plague",
+      "item_group.seventh_ancient_ways_sub.pick_your_poison": "Pick Your Poison",
+      "item.poison_madness.poison_frog_red_white_spawn_egg": "Poison Frog Red-White Spawn Egg",
+      "gui.poison_madness.poison_craft_gui.button_copy_poison": "Copy Poison",
+      "entity.poison_madness.poison_frog_common": "Poison Frog Dark Green",
+      "subtitles.frogambient": "Frog ambient sound",
+      "subtitles.coatdart": "",
+      "death.attack.backlash": "%1$s couldn\u0027t survive the backlash",
+      "item.poison_madness.dark_frog_bowl": "Dark Frog Bowl",
+      "item.poison_madness.common_frog_bowl": "Dark Green Frog Bowl",
+      "effect.poison_madness.neurotoxin": "Stomach Worm",
+      "item.poison_madness.poison_frog_cyan_spawn_egg": "Poison Frog Cyan Spawn Egg",
+      "advancements.taste_the_rainbow.title": "Taste The Rainbow",
+      "effect.poison_madness.thermogenesis": "Thermogenesis",
+      "subtitles.empty": "",
+      "death.attack.stimulation_damage.item": "%1$s was killed by %2$s using %3$s because of overstimulation",
+      "subtitles.hypersalivation_audio": "",
+      "item.poison_madness.black_spider_bowl": "Black Spider Bowl"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Frogs",
+        "children": [
+          {
+            "name": "Golden",
+            "children": []
+          },
+          {
+            "name": "Blue",
+            "children": []
+          },
+          {
+            "name": "orange",
+            "children": []
+          },
+          {
+            "name": "Crimson",
+            "children": []
+          },
+          {
+            "name": "Red",
+            "children": []
+          },
+          {
+            "name": "Green",
+            "children": []
+          },
+          {
+            "name": "Pink",
+            "children": []
+          },
+          {
+            "name": "Violet",
+            "children": []
+          },
+          {
+            "name": "Dark",
+            "children": []
+          },
+          {
+            "name": "cyan",
+            "children": []
+          },
+          {
+            "name": "CommonFrog",
+            "children": []
+          },
+          {
+            "name": "DarkPurple",
+            "children": []
+          },
+          {
+            "name": "yellow",
+            "children": []
+          },
+          {
+            "name": "RedWhite",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "lizards",
+        "children": [
+          {
+            "name": "Black",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "toads",
+        "children": [
+          {
+            "name": "Green",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "spider",
+        "children": [
+          {
+            "name": "Black",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Poison Dart",
+        "children": []
+      },
+      {
+        "name": "advancements",
+        "children": []
+      },
+      {
+        "name": "Rituals",
+        "children": []
+      },
+      {
+        "name": "sus food",
+        "children": []
+      },
+      {
+        "name": "Tables",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "poison_madness",
+    "modName": "Poison Madness",
+    "version": "1.0.0",
+    "description": "Adds a bunch of poisonus frogs",
+    "author": "Abunana, MCreator,Doctor4at",
+    "websiteURL": "https://mcreator.net",
+    "license": "Creative Commons Attribution-NonCommercial 3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib",
+      "jei"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about, Created using Doctor4at\u0027s sprites and ideas.",
+    "modElementsPackage": "net.mcreator.seventhancientwayssub",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

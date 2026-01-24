@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Toxin",
+    "icon": "toxin.png",
+    "color": {
+      "value": -16621568,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "ToxinOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "ToxinEffectExpires"
+    }
+  }
+}

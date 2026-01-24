@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "river",
+    "forest",
+    "swamp"
+  ],
+  "spawners": {
+    "type": "poison_madness:green_toad",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

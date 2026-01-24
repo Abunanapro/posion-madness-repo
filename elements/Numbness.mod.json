@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Numbness",
+    "icon": "numbness.png",
+    "color": {
+      "value": -16724992,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "NumbnessEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "NumbnessEffectExpires"
+    }
+  }
+}

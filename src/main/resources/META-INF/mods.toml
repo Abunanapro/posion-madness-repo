@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Creative Commons Attribution-NonCommercial 3.0"
+
+[[mods]]
+modId="poison_madness"
+version="1.0.0"
+displayName="Poison Madness"
+displayURL="https://mcreator.net"
+credits="Created using mod maker MCreator - https://mcreator.net/about, Created using Doctor4at's sprites and ideas."
+authors="Abunana, MCreator,Doctor4at"
+description="Adds a bunch of poisonus frogs"
+
+[[dependencies.poison_madness]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.poison_madness]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

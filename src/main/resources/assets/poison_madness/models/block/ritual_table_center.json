@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "poison_madness:block/altar",
+    "particle": "poison_madness:block/altar"
+  },
+  "render_type": "cutout"
+}

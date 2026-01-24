@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s 's stomach got obliterated because of the backlash",
+    "itemDeathMessage": "%1$s was killed from stomach numbness by %2$s using %3$s",
+    "playerDeathMessage": "%1$s died from stomach numbness whilst trying to escape %2$s"
+  }
+}

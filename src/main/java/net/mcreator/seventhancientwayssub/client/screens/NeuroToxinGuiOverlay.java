@@ -1,0 +1,59 @@
+
+package net.mcreator.seventhancientwayssub.client.screens;
+
+import org.checkerframework.checker.units.qual.h;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
+import net.minecraftforge.client.event.RenderGuiEvent;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.GameRenderer;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.seventhancientwayssub.procedures.ReturnTimeLeftProcedure;
+import net.mcreator.seventhancientwayssub.procedures.NeuroToxinGuiDisplayOverlayIngameProcedure;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.platform.GlStateManager;
+
+@Mod.EventBusSubscriber({Dist.CLIENT})
+public class NeuroToxinGuiOverlay {
+	@SubscribeEvent(priority = EventPriority.LOW)
+	public static void eventHandler(RenderGuiEvent.Pre event) {
+		int w = event.getWindow().getGuiScaledWidth();
+		int h = event.getWindow().getGuiScaledHeight();
+		Level world = null;
+		double x = 0;
+		double y = 0;
+		double z = 0;
+		Player entity = Minecraft.getInstance().player;
+		if (entity != null) {
+			world = entity.level();
+			x = entity.getX();
+			y = entity.getY();
+			z = entity.getZ();
+		}
+		RenderSystem.disableDepthTest();
+		RenderSystem.depthMask(false);
+		RenderSystem.enableBlend();
+		RenderSystem.setShader(GameRenderer::getPositionTexShader);
+		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+		RenderSystem.setShaderColor(1, 1, 1, 1);
+		if (NeuroToxinGuiDisplayOverlayIngameProcedure.execute(entity)) {
+			event.getGuiGraphics().blit(new ResourceLocation("poison_madness:textures/screens/stmch.png"), 0, 0, 0, 0, w, h, w, h);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					ReturnTimeLeftProcedure.execute(entity), w / 2 + -48, h / 2 + -58, -8901929, false);
+		}
+		RenderSystem.depthMask(true);
+		RenderSystem.defaultBlendFunc();
+		RenderSystem.enableDepthTest();
+		RenderSystem.disableBlend();
+		RenderSystem.setShaderColor(1, 1, 1, 1);
+	}
+}
