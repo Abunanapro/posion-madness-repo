@@ -32,6 +32,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
@@ -44,6 +45,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.mcreator.seventhancientwayssub.procedures.PoisonFrogGoldenOnEntityTickUpdateProcedure;
 import net.mcreator.seventhancientwayssub.procedures.PoisonFrogBlueEntityIsHurtProcedure;
 import net.mcreator.seventhancientwayssub.procedures.FillBlueFrogProcedure;
 import net.mcreator.seventhancientwayssub.init.PoisonMadnessModEntities;
@@ -121,6 +123,8 @@ public class PoisonFrogBlueEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
 		PoisonFrogBlueEntityIsHurtProcedure.execute(source.getEntity());
+		if (source.is(DamageTypes.FALL))
+			return false;
 		return super.hurt(source, amount);
 	}
 
@@ -155,6 +159,7 @@ public class PoisonFrogBlueEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		PoisonFrogGoldenOnEntityTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
 
@@ -185,13 +190,14 @@ public class PoisonFrogBlueEntity extends PathfinderMob implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
-
-			) {
+			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && this.onGround()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("walk"));
 			}
 			if (this.isInWaterOrBubble()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.poison_dart_frog.swim"));
+			}
+			if (!this.onGround()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.poison_dart_frog.jump"));
 			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.poison_dart_frog.idle"));
 		}

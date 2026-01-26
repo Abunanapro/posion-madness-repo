@@ -4276,6 +4276,26 @@
         ]
       },
       "path": "~/Poison Dart"
+    },
+    {
+      "name": "PoisonFrogGoldenOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_frog_golden_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/PoisonFrogGoldenOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Golden"
     }
   ],
   "variable_elements": [

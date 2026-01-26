@@ -74,7 +74,7 @@
     "canControlStrafe": false,
     "immuneToFire": false,
     "immuneToArrows": false,
-    "immuneToFallDamage": false,
+    "immuneToFallDamage": true,
     "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
@@ -106,6 +106,9 @@
     "onRightClickedOn": {
       "name": "FillBlueFrog"
     },
+    "onMobTickUpdate": {
+      "name": "PoisonFrogGoldenOnEntityTickUpdate"
+    },
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
@@ -118,7 +121,7 @@
     "animation5": "animation.poison_dart_frog.swim",
     "animation6": "",
     "animation7": "walk",
-    "animation8": "",
+    "animation8": "animation.poison_dart_frog.jump",
     "animation9": "",
     "animation10": "",
     "enable2": true,
@@ -127,7 +130,7 @@
     "enable5": true,
     "enable6": false,
     "enable7": false,
-    "enable8": false,
+    "enable8": true,
     "enable9": false,
     "enable10": false,
     "breedable": false,
