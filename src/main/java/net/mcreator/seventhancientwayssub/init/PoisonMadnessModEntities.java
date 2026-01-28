@@ -34,6 +34,7 @@ import net.mcreator.seventhancientwayssub.entity.PoisonFrogBlueEntity;
 import net.mcreator.seventhancientwayssub.entity.LizardBrownEntity;
 import net.mcreator.seventhancientwayssub.entity.LizardBlackEntity;
 import net.mcreator.seventhancientwayssub.entity.LizardBlack2Entity;
+import net.mcreator.seventhancientwayssub.entity.LightGreenToadEntity;
 import net.mcreator.seventhancientwayssub.entity.GreenToadEntity;
 import net.mcreator.seventhancientwayssub.entity.DartEntity;
 import net.mcreator.seventhancientwayssub.PoisonMadnessMod;
@@ -106,8 +107,6 @@ public class PoisonMadnessModEntities {
 			EntityType.Builder.<SpiderBlackEntity>of(SpiderBlackEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpiderBlackEntity::new)
 
 					.sized(0.6f, 0.4f));
-	public static final RegistryObject<EntityType<DartEntity>> DART = register("projectile_dart",
-			EntityType.Builder.<DartEntity>of(DartEntity::new, MobCategory.MISC).setCustomClientFactory(DartEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PoisonFrogRedWhiteEntity>> POISON_FROG_RED_WHITE = register("poison_frog_red_white",
 			EntityType.Builder.<PoisonFrogRedWhiteEntity>of(PoisonFrogRedWhiteEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PoisonFrogRedWhiteEntity::new)
 
@@ -118,6 +117,12 @@ public class PoisonMadnessModEntities {
 					.sized(0.6f, 0.5f));
 	public static final RegistryObject<EntityType<LizardBrownEntity>> LIZARD_BROWN = register("lizard_brown",
 			EntityType.Builder.<LizardBrownEntity>of(LizardBrownEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LizardBrownEntity::new)
+
+					.sized(0.6f, 0.5f));
+	public static final RegistryObject<EntityType<DartEntity>> DART = register("projectile_dart",
+			EntityType.Builder.<DartEntity>of(DartEntity::new, MobCategory.MISC).setCustomClientFactory(DartEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LightGreenToadEntity>> LIGHT_GREEN_TOAD = register("light_green_toad",
+			EntityType.Builder.<LightGreenToadEntity>of(LightGreenToadEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LightGreenToadEntity::new)
 
 					.sized(0.6f, 0.5f));
 
@@ -147,6 +152,7 @@ public class PoisonMadnessModEntities {
 			PoisonFrogRedWhiteEntity.init();
 			LizardBlack2Entity.init();
 			LizardBrownEntity.init();
+			LightGreenToadEntity.init();
 		});
 	}
 
@@ -171,5 +177,6 @@ public class PoisonMadnessModEntities {
 		event.put(POISON_FROG_RED_WHITE.get(), PoisonFrogRedWhiteEntity.createAttributes().build());
 		event.put(LIZARD_BLACK_2.get(), LizardBlack2Entity.createAttributes().build());
 		event.put(LIZARD_BROWN.get(), LizardBrownEntity.createAttributes().build());
+		event.put(LIGHT_GREEN_TOAD.get(), LightGreenToadEntity.createAttributes().build());
 	}
 }

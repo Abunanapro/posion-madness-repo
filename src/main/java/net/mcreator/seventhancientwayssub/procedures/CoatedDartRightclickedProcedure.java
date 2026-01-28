@@ -42,6 +42,8 @@ public class CoatedDartRightclickedProcedure {
 			entity.getPersistentData().putBoolean("hyperfixation", ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("hyperfixation")));
 			entity.getPersistentData().putBoolean("vanish", ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("vanish")));
 			entity.getPersistentData().putBoolean("combustion", ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("combustion")));
+			entity.getPersistentData().putBoolean("overchargeleg", ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("overchargeleg")));
+			entity.getPersistentData().putBoolean("blackout", ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("blackout")));
 			entity.getPersistentData().putBoolean("sh", true);
 			{
 				Entity _shootFrom = entity;

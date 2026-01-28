@@ -25,4 +25,5 @@ public class PoisonMadnessModSounds {
 	public static final RegistryObject<SoundEvent> THROWDART = REGISTRY.register("throwdart", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("poison_madness", "throwdart")));
 	public static final RegistryObject<SoundEvent> COATDART = REGISTRY.register("coatdart", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("poison_madness", "coatdart")));
 	public static final RegistryObject<SoundEvent> DARTTHROW = REGISTRY.register("dartthrow", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("poison_madness", "dartthrow")));
+	public static final RegistryObject<SoundEvent> MEGAJUMPEFF = REGISTRY.register("megajumpeff", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("poison_madness", "megajumpeff")));
 }

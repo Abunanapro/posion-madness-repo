@@ -82,5 +82,13 @@ public class DartProjectileHitsLivingEntityProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PoisonMadnessModMobEffects.COMBUSTION.get(), 200, 0));
 		}
+		if (sourceentity.getPersistentData().getBoolean("overchargeleg") == true) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(PoisonMadnessModMobEffects.OVERCHARGED_LEGS.get(), 200, 0));
+		}
+		if (sourceentity.getPersistentData().getBoolean("blackout") == true) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(PoisonMadnessModMobEffects.BLACKOUT.get(), 200, 0));
+		}
 	}
 }

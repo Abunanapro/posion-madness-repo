@@ -101,7 +101,7 @@
       "value": ""
     },
     "whenMobIsHurt": {
-      "name": "LizardBlackEntityIsHurt"
+      "name": "LizardBlack2EntityIsHurt"
     },
     "onRightClickedOn": {
       "name": "LizardBlack2RightClickedOnEntity"
@@ -152,10 +152,7 @@
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [
       {
-        "value": "savanna_rock"
-      },
-      {
-        "value": "savanna"
+        "value": "roofed_forest"
       }
     ],
     "spawnInDungeons": false

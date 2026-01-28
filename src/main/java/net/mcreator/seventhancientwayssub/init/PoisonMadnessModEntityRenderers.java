@@ -27,6 +27,7 @@ import net.mcreator.seventhancientwayssub.client.renderer.PoisonFrogBlueRenderer
 import net.mcreator.seventhancientwayssub.client.renderer.LizardBrownRenderer;
 import net.mcreator.seventhancientwayssub.client.renderer.LizardBlackRenderer;
 import net.mcreator.seventhancientwayssub.client.renderer.LizardBlack2Renderer;
+import net.mcreator.seventhancientwayssub.client.renderer.LightGreenToadRenderer;
 import net.mcreator.seventhancientwayssub.client.renderer.GreenToadRenderer;
 import net.mcreator.seventhancientwayssub.client.renderer.DartRenderer;
 
@@ -50,9 +51,10 @@ public class PoisonMadnessModEntityRenderers {
 		event.registerEntityRenderer(PoisonMadnessModEntities.LIZARD_BLACK.get(), LizardBlackRenderer::new);
 		event.registerEntityRenderer(PoisonMadnessModEntities.GREEN_TOAD.get(), GreenToadRenderer::new);
 		event.registerEntityRenderer(PoisonMadnessModEntities.SPIDER_BLACK.get(), SpiderBlackRenderer::new);
-		event.registerEntityRenderer(PoisonMadnessModEntities.DART.get(), DartRenderer::new);
 		event.registerEntityRenderer(PoisonMadnessModEntities.POISON_FROG_RED_WHITE.get(), PoisonFrogRedWhiteRenderer::new);
 		event.registerEntityRenderer(PoisonMadnessModEntities.LIZARD_BLACK_2.get(), LizardBlack2Renderer::new);
 		event.registerEntityRenderer(PoisonMadnessModEntities.LIZARD_BROWN.get(), LizardBrownRenderer::new);
+		event.registerEntityRenderer(PoisonMadnessModEntities.DART.get(), DartRenderer::new);
+		event.registerEntityRenderer(PoisonMadnessModEntities.LIGHT_GREEN_TOAD.get(), LightGreenToadRenderer::new);
 	}
 }

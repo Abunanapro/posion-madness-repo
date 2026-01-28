@@ -18,6 +18,7 @@ import net.mcreator.seventhancientwayssub.potion.ThermogenesisMobEffect;
 import net.mcreator.seventhancientwayssub.potion.StimulationMobEffect;
 import net.mcreator.seventhancientwayssub.potion.ReanimatingToxinMobEffect;
 import net.mcreator.seventhancientwayssub.potion.PoisonusPlagueMobEffect;
+import net.mcreator.seventhancientwayssub.potion.OverchargedLegsMobEffect;
 import net.mcreator.seventhancientwayssub.potion.NumbnessMobEffect;
 import net.mcreator.seventhancientwayssub.potion.NeurotoxinMobEffect;
 import net.mcreator.seventhancientwayssub.potion.LeachMobEffect;
@@ -27,6 +28,7 @@ import net.mcreator.seventhancientwayssub.potion.GrillLungsMobEffect;
 import net.mcreator.seventhancientwayssub.potion.ConfusionMobEffect;
 import net.mcreator.seventhancientwayssub.potion.CombustionMobEffect;
 import net.mcreator.seventhancientwayssub.potion.ComaMobEffect;
+import net.mcreator.seventhancientwayssub.potion.BlackoutMobEffect;
 import net.mcreator.seventhancientwayssub.potion.BatrachotoxinMobEffect;
 import net.mcreator.seventhancientwayssub.PoisonMadnessMod;
 
@@ -50,4 +52,6 @@ public class PoisonMadnessModMobEffects {
 	public static final RegistryObject<MobEffect> HYPERFIXATION = REGISTRY.register("hyperfixation", () -> new HyperfixationMobEffect());
 	public static final RegistryObject<MobEffect> VANISH = REGISTRY.register("vanish", () -> new VanishMobEffect());
 	public static final RegistryObject<MobEffect> COMBUSTION = REGISTRY.register("combustion", () -> new CombustionMobEffect());
+	public static final RegistryObject<MobEffect> OVERCHARGED_LEGS = REGISTRY.register("overcharged_legs", () -> new OverchargedLegsMobEffect());
+	public static final RegistryObject<MobEffect> BLACKOUT = REGISTRY.register("blackout", () -> new BlackoutMobEffect());
 }

@@ -14,8 +14,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.seventhancientwayssub.procedures.BlackLizardBowlPlayerFinishesUsingItemProcedure;
 import net.mcreator.seventhancientwayssub.procedures.Black2LizardBowlRightclickedOnBlockProcedure;
+import net.mcreator.seventhancientwayssub.procedures.Black2LizardBowlPlayerFinishesUsingItemProcedure;
 import net.mcreator.seventhancientwayssub.init.PoisonMadnessModItems;
 
 import java.util.List;
@@ -47,7 +47,7 @@ public class Black2LizardBowlItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		BlackLizardBowlPlayerFinishesUsingItemProcedure.execute(entity);
+		Black2LizardBowlPlayerFinishesUsingItemProcedure.execute(entity);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

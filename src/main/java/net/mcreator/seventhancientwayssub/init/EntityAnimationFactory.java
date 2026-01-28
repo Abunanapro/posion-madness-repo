@@ -22,6 +22,7 @@ import net.mcreator.seventhancientwayssub.entity.PoisonFrogBlueEntity;
 import net.mcreator.seventhancientwayssub.entity.LizardBrownEntity;
 import net.mcreator.seventhancientwayssub.entity.LizardBlackEntity;
 import net.mcreator.seventhancientwayssub.entity.LizardBlack2Entity;
+import net.mcreator.seventhancientwayssub.entity.LightGreenToadEntity;
 import net.mcreator.seventhancientwayssub.entity.GreenToadEntity;
 
 @Mod.EventBusSubscriber
@@ -156,6 +157,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof LizardBrownEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof LightGreenToadEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

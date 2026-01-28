@@ -44,8 +44,8 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
-import net.mcreator.seventhancientwayssub.procedures.LizardBlackEntityIsHurtProcedure;
 import net.mcreator.seventhancientwayssub.procedures.LizardBlack2RightClickedOnEntityProcedure;
+import net.mcreator.seventhancientwayssub.procedures.LizardBlack2EntityIsHurtProcedure;
 import net.mcreator.seventhancientwayssub.init.PoisonMadnessModEntities;
 
 public class LizardBlack2Entity extends PathfinderMob implements GeoEntity {
@@ -120,7 +120,7 @@ public class LizardBlack2Entity extends PathfinderMob implements GeoEntity {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		LizardBlackEntityIsHurtProcedure.execute(source.getEntity());
+		LizardBlack2EntityIsHurtProcedure.execute(source.getEntity());
 		return super.hurt(source, amount);
 	}
 

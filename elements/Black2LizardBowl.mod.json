@@ -39,7 +39,7 @@
       "name": "Black2LizardBowlRightclickedOnBlock"
     },
     "onFinishUsingItem": {
-      "name": "BlackLizardBowlPlayerFinishesUsingItem"
+      "name": "Black2LizardBowlPlayerFinishesUsingItem"
     },
     "enableRanged": false,
     "shootConstantly": false,

@@ -1,9 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": [
-    "savanna_plateau",
-    "savanna"
-  ],
+  "biomes": "dark_forest",
   "spawners": {
     "type": "poison_madness:lizard_black_2",
     "weight": 20,

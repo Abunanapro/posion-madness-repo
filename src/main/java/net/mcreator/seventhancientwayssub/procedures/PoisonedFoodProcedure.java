@@ -104,6 +104,14 @@ public class PoisonedFoodProcedure {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(PoisonMadnessModMobEffects.COMBUSTION.get(), 200, 0));
 			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("overchargeleg") == true) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(PoisonMadnessModMobEffects.OVERCHARGED_LEGS.get(), 200, 0));
+			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("blackout") == true) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(PoisonMadnessModMobEffects.BLACKOUT.get(), 200, 0));
+			}
 		}
 	}
 }

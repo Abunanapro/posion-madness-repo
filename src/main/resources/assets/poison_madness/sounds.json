@@ -105,5 +105,13 @@
         "stream": false
       }
     ]
+  },
+  "megajumpeff": {
+    "sounds": [
+      {
+        "name": "poison_madness:megajump",
+        "stream": false
+      }
+    ]
   }
 }
