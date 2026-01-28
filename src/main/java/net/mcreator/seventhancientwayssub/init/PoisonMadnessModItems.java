@@ -37,9 +37,11 @@ import net.mcreator.seventhancientwayssub.item.CyanFrogBowlItem;
 import net.mcreator.seventhancientwayssub.item.CrimsonFrogBowlItem;
 import net.mcreator.seventhancientwayssub.item.CommonFrogBowlItem;
 import net.mcreator.seventhancientwayssub.item.CoatedDartItem;
+import net.mcreator.seventhancientwayssub.item.BrownLizardBowlItem;
 import net.mcreator.seventhancientwayssub.item.BlueFrogBowlItem;
 import net.mcreator.seventhancientwayssub.item.BlackSpiderBowlItem;
 import net.mcreator.seventhancientwayssub.item.BlackLizardBowlItem;
+import net.mcreator.seventhancientwayssub.item.Black2LizardBowlItem;
 import net.mcreator.seventhancientwayssub.item.AdvancementItem1Item;
 import net.mcreator.seventhancientwayssub.item.Advancement2Item;
 import net.mcreator.seventhancientwayssub.PoisonMadnessMod;
@@ -74,7 +76,7 @@ public class PoisonMadnessModItems {
 	public static final RegistryObject<Item> DARK_PURPLE_FROG_BOWL = REGISTRY.register("dark_purple_frog_bowl", () -> new DarkPurpleFrogBowlItem());
 	public static final RegistryObject<Item> POISON_FROG_YELLOW_SPAWN_EGG = REGISTRY.register("poison_frog_yellow_spawn_egg", () -> new ForgeSpawnEggItem(PoisonMadnessModEntities.POISON_FROG_YELLOW, -16053504, -10066432, new Item.Properties()));
 	public static final RegistryObject<Item> YELLOW_FROG_BOWL = REGISTRY.register("yellow_frog_bowl", () -> new YellowFrogBowlItem());
-	public static final RegistryObject<Item> LIZARD_BLACK_SPAWN_EGG = REGISTRY.register("lizard_black_spawn_egg", () -> new ForgeSpawnEggItem(PoisonMadnessModEntities.LIZARD_BLACK, -2883578, -14211289, new Item.Properties()));
+	public static final RegistryObject<Item> LIZARD_BLACK_SPAWN_EGG = REGISTRY.register("lizard_black_spawn_egg", () -> new ForgeSpawnEggItem(PoisonMadnessModEntities.LIZARD_BLACK, -13395712, -10092340, new Item.Properties()));
 	public static final RegistryObject<Item> BLACK_LIZARD_BOWL = REGISTRY.register("black_lizard_bowl", () -> new BlackLizardBowlItem());
 	public static final RegistryObject<Item> GREEN_TOAD_SPAWN_EGG = REGISTRY.register("green_toad_spawn_egg", () -> new ForgeSpawnEggItem(PoisonMadnessModEntities.GREEN_TOAD, -16751104, -16764160, new Item.Properties()));
 	public static final RegistryObject<Item> GREEN_TOAD_BOWL = REGISTRY.register("green_toad_bowl", () -> new GreenToadBowlItem());
@@ -90,6 +92,10 @@ public class PoisonMadnessModItems {
 			() -> new ForgeSpawnEggItem(PoisonMadnessModEntities.POISON_FROG_RED_WHITE, -3407821, -3355444, new Item.Properties()));
 	public static final RegistryObject<Item> RED_WHITE_FROG_BOWL = REGISTRY.register("red_white_frog_bowl", () -> new RedWhiteFrogBowlItem());
 	public static final RegistryObject<Item> POISON_CRAFT_TABLE = block(PoisonMadnessModBlocks.POISON_CRAFT_TABLE);
+	public static final RegistryObject<Item> BLACK_2_LIZARD_BOWL = REGISTRY.register("black_2_lizard_bowl", () -> new Black2LizardBowlItem());
+	public static final RegistryObject<Item> LIZARD_BLACK_2_SPAWN_EGG = REGISTRY.register("lizard_black_2_spawn_egg", () -> new ForgeSpawnEggItem(PoisonMadnessModEntities.LIZARD_BLACK_2, -13421773, -6750208, new Item.Properties()));
+	public static final RegistryObject<Item> BROWN_LIZARD_BOWL = REGISTRY.register("brown_lizard_bowl", () -> new BrownLizardBowlItem());
+	public static final RegistryObject<Item> LIZARD_BROWN_SPAWN_EGG = REGISTRY.register("lizard_brown_spawn_egg", () -> new ForgeSpawnEggItem(PoisonMadnessModEntities.LIZARD_BROWN, -13421824, -3368704, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

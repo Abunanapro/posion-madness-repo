@@ -73,7 +73,7 @@ public class LizardBlackEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "lagartija");
+		this.entityData.define(TEXTURE, "lagartija32green");
 	}
 
 	public void setTexture(String texture) {

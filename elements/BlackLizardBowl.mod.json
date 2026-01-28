@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "lagartija_bowl",
+    "texture": "lagartija_green_bowl",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Dark Lizard Bowl",
+    "name": "Green Lizard Bowl",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PickYourPoison"

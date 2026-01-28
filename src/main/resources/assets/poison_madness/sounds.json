@@ -97,5 +97,13 @@
         "stream": false
       }
     ]
+  },
+  "dartthrow": {
+    "sounds": [
+      {
+        "name": "poison_madness:dart-throw",
+        "stream": false
+      }
+    ]
   }
 }

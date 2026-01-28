@@ -25,6 +25,7 @@ import net.mcreator.seventhancientwayssub.potion.HypersalivationMobEffect;
 import net.mcreator.seventhancientwayssub.potion.HyperfixationMobEffect;
 import net.mcreator.seventhancientwayssub.potion.GrillLungsMobEffect;
 import net.mcreator.seventhancientwayssub.potion.ConfusionMobEffect;
+import net.mcreator.seventhancientwayssub.potion.CombustionMobEffect;
 import net.mcreator.seventhancientwayssub.potion.ComaMobEffect;
 import net.mcreator.seventhancientwayssub.potion.BatrachotoxinMobEffect;
 import net.mcreator.seventhancientwayssub.PoisonMadnessMod;
@@ -48,4 +49,5 @@ public class PoisonMadnessModMobEffects {
 	public static final RegistryObject<MobEffect> GRILL_LUNGS = REGISTRY.register("grill_lungs", () -> new GrillLungsMobEffect());
 	public static final RegistryObject<MobEffect> HYPERFIXATION = REGISTRY.register("hyperfixation", () -> new HyperfixationMobEffect());
 	public static final RegistryObject<MobEffect> VANISH = REGISTRY.register("vanish", () -> new VanishMobEffect());
+	public static final RegistryObject<MobEffect> COMBUSTION = REGISTRY.register("combustion", () -> new CombustionMobEffect());
 }

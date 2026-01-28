@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "desert",
+    "badlands"
+  ],
+  "spawners": {
+    "type": "poison_madness:lizard_brown",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

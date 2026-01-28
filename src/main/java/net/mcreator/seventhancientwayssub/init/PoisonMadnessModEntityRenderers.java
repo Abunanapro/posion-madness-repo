@@ -9,8 +9,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.client.renderer.entity.ThrownItemRenderer;
-
 import net.mcreator.seventhancientwayssub.client.renderer.SpiderBlackRenderer;
 import net.mcreator.seventhancientwayssub.client.renderer.PoisonFrogYellowRenderer;
 import net.mcreator.seventhancientwayssub.client.renderer.PoisonFrogVioletRenderer;
@@ -26,8 +24,11 @@ import net.mcreator.seventhancientwayssub.client.renderer.PoisonFrogCyanRenderer
 import net.mcreator.seventhancientwayssub.client.renderer.PoisonFrogCrimsonRenderer;
 import net.mcreator.seventhancientwayssub.client.renderer.PoisonFrogCommonRenderer;
 import net.mcreator.seventhancientwayssub.client.renderer.PoisonFrogBlueRenderer;
+import net.mcreator.seventhancientwayssub.client.renderer.LizardBrownRenderer;
 import net.mcreator.seventhancientwayssub.client.renderer.LizardBlackRenderer;
+import net.mcreator.seventhancientwayssub.client.renderer.LizardBlack2Renderer;
 import net.mcreator.seventhancientwayssub.client.renderer.GreenToadRenderer;
+import net.mcreator.seventhancientwayssub.client.renderer.DartRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class PoisonMadnessModEntityRenderers {
@@ -49,7 +50,9 @@ public class PoisonMadnessModEntityRenderers {
 		event.registerEntityRenderer(PoisonMadnessModEntities.LIZARD_BLACK.get(), LizardBlackRenderer::new);
 		event.registerEntityRenderer(PoisonMadnessModEntities.GREEN_TOAD.get(), GreenToadRenderer::new);
 		event.registerEntityRenderer(PoisonMadnessModEntities.SPIDER_BLACK.get(), SpiderBlackRenderer::new);
-		event.registerEntityRenderer(PoisonMadnessModEntities.DART.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(PoisonMadnessModEntities.DART.get(), DartRenderer::new);
 		event.registerEntityRenderer(PoisonMadnessModEntities.POISON_FROG_RED_WHITE.get(), PoisonFrogRedWhiteRenderer::new);
+		event.registerEntityRenderer(PoisonMadnessModEntities.LIZARD_BLACK_2.get(), LizardBlack2Renderer::new);
+		event.registerEntityRenderer(PoisonMadnessModEntities.LIZARD_BROWN.get(), LizardBrownRenderer::new);
 	}
 }

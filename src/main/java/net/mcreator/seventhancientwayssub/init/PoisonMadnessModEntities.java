@@ -31,7 +31,9 @@ import net.mcreator.seventhancientwayssub.entity.PoisonFrogCyanEntity;
 import net.mcreator.seventhancientwayssub.entity.PoisonFrogCrimsonEntity;
 import net.mcreator.seventhancientwayssub.entity.PoisonFrogCommonEntity;
 import net.mcreator.seventhancientwayssub.entity.PoisonFrogBlueEntity;
+import net.mcreator.seventhancientwayssub.entity.LizardBrownEntity;
 import net.mcreator.seventhancientwayssub.entity.LizardBlackEntity;
+import net.mcreator.seventhancientwayssub.entity.LizardBlack2Entity;
 import net.mcreator.seventhancientwayssub.entity.GreenToadEntity;
 import net.mcreator.seventhancientwayssub.entity.DartEntity;
 import net.mcreator.seventhancientwayssub.PoisonMadnessMod;
@@ -110,6 +112,14 @@ public class PoisonMadnessModEntities {
 			EntityType.Builder.<PoisonFrogRedWhiteEntity>of(PoisonFrogRedWhiteEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PoisonFrogRedWhiteEntity::new)
 
 					.sized(0.6f, 0.5f));
+	public static final RegistryObject<EntityType<LizardBlack2Entity>> LIZARD_BLACK_2 = register("lizard_black_2",
+			EntityType.Builder.<LizardBlack2Entity>of(LizardBlack2Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LizardBlack2Entity::new)
+
+					.sized(0.6f, 0.5f));
+	public static final RegistryObject<EntityType<LizardBrownEntity>> LIZARD_BROWN = register("lizard_brown",
+			EntityType.Builder.<LizardBrownEntity>of(LizardBrownEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LizardBrownEntity::new)
+
+					.sized(0.6f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -135,6 +145,8 @@ public class PoisonMadnessModEntities {
 			GreenToadEntity.init();
 			SpiderBlackEntity.init();
 			PoisonFrogRedWhiteEntity.init();
+			LizardBlack2Entity.init();
+			LizardBrownEntity.init();
 		});
 	}
 
@@ -157,5 +169,7 @@ public class PoisonMadnessModEntities {
 		event.put(GREEN_TOAD.get(), GreenToadEntity.createAttributes().build());
 		event.put(SPIDER_BLACK.get(), SpiderBlackEntity.createAttributes().build());
 		event.put(POISON_FROG_RED_WHITE.get(), PoisonFrogRedWhiteEntity.createAttributes().build());
+		event.put(LIZARD_BLACK_2.get(), LizardBlack2Entity.createAttributes().build());
+		event.put(LIZARD_BROWN.get(), LizardBrownEntity.createAttributes().build());
 	}
 }

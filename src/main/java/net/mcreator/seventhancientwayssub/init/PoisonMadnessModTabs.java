@@ -56,6 +56,10 @@ public class PoisonMadnessModTabs {
 				tabData.accept(PoisonMadnessModItems.POISON_FROG_RED_WHITE_SPAWN_EGG.get());
 				tabData.accept(PoisonMadnessModItems.RED_WHITE_FROG_BOWL.get());
 				tabData.accept(PoisonMadnessModBlocks.POISON_CRAFT_TABLE.get().asItem());
+				tabData.accept(PoisonMadnessModItems.BLACK_2_LIZARD_BOWL.get());
+				tabData.accept(PoisonMadnessModItems.LIZARD_BLACK_2_SPAWN_EGG.get());
+				tabData.accept(PoisonMadnessModItems.BROWN_LIZARD_BOWL.get());
+				tabData.accept(PoisonMadnessModItems.LIZARD_BROWN_SPAWN_EGG.get());
 			})
 
 					.build());

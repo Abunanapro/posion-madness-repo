@@ -78,5 +78,9 @@ public class DartProjectileHitsLivingEntityProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PoisonMadnessModMobEffects.VANISH.get(), 200, 0));
 		}
+		if (sourceentity.getPersistentData().getBoolean("combustion") == true) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(PoisonMadnessModMobEffects.COMBUSTION.get(), 200, 0));
+		}
 	}
 }

@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Poison Lizard Black",
     "mobLabel": "",
-    "mobModelTexture": "lagartija.png",
+    "mobModelTexture": "lagartija32green.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -19,11 +19,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -2883578,
+      "value": -13395712,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -14211289,
+      "value": -10092340,
       "falpha": 0.0
     },
     "creativeTab": {

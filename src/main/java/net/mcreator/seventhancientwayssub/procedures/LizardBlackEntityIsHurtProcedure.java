@@ -11,6 +11,6 @@ public class LizardBlackEntityIsHurtProcedure {
 		if (sourceentity == null)
 			return;
 		if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PoisonMadnessModMobEffects.POISONUS_PLAGUE.get(), 250, 0));
+			_entity.addEffect(new MobEffectInstance(PoisonMadnessModMobEffects.COMBUSTION.get(), 250, 0));
 	}
 }

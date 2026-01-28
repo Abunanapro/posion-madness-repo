@@ -3498,7 +3498,8 @@
       "registry_name": "dart",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/seventhancientwayssub/entity/DartEntity.java"
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/DartEntity.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/DartRenderer.java"
         ]
       },
       "path": "~/Poison Dart"
@@ -3549,6 +3550,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4296,6 +4313,278 @@
         ]
       },
       "path": "~/Frogs/Golden"
+    },
+    {
+      "name": "LizardBlack2",
+      "type": "animatedentity",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lizard_black_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/lizard_black_2_spawn_egg.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/LizardBlack2Entity.java",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/lizard_black_2_biome_modifier.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/LizardBlack2Renderer.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/LizardBlack2Model.java"
+        ]
+      },
+      "path": "~/lizards/Green"
+    },
+    {
+      "name": "Black2LizardBowl",
+      "type": "item",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_2_lizard_bowl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/item/Black2LizardBowlItem.java",
+          "src/main/resources/assets/poison_madness/models/item/black_2_lizard_bowl.json"
+        ]
+      },
+      "path": "~/lizards/Green"
+    },
+    {
+      "name": "LizardBlack2RightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lizard_black_2_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/LizardBlack2RightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lizards/Green"
+    },
+    {
+      "name": "Black2LizardBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_2_lizard_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/Black2LizardBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lizards/Green"
+    },
+    {
+      "name": "LizardBrown",
+      "type": "animatedentity",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lizard_brown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/client/renderer/LizardBrownRenderer.java",
+          "src/main/resources/assets/poison_madness/models/item/lizard_brown_spawn_egg.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/LizardBrownEntity.java",
+          "src/main/java/net/mcreator/seventhancientwayssub/entity/model/LizardBrownModel.java",
+          "src/main/resources/data/poison_madness/forge/biome_modifier/lizard_brown_biome_modifier.json"
+        ]
+      },
+      "path": "~/lizards/Brown"
+    },
+    {
+      "name": "BrownLizardBowl",
+      "type": "item",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_lizard_bowl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/poison_madness/models/item/brown_lizard_bowl.json",
+          "src/main/java/net/mcreator/seventhancientwayssub/item/BrownLizardBowlItem.java"
+        ]
+      },
+      "path": "~/lizards/Brown"
+    },
+    {
+      "name": "LizardBrownRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lizard_brown_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/LizardBrownRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lizards/Brown"
+    },
+    {
+      "name": "BrownLizardBowlRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_lizard_bowl_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/BrownLizardBowlRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lizards/Brown"
+    },
+    {
+      "name": "Combustion",
+      "type": "potioneffect",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combustion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/potion/CombustionMobEffect.java"
+        ]
+      },
+      "path": "~/lizards/Brown"
+    },
+    {
+      "name": "CombustionOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combustion_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/CombustionOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lizards/Brown"
+    },
+    {
+      "name": "BrownLizardBowlPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_lizard_bowl_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/seventhancientwayssub/procedures/BrownLizardBowlPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Frogs/Golden"
     }
   ],
   "variable_elements": [
@@ -4408,6 +4697,14 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "dartthrow",
+      "files": [
+        "dart-throw"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -4422,7 +4719,7 @@
       "item.poison_madness.poison_frog_dark_spawn_egg": "Poison Frog Dark Spawn Egg",
       "death.attack.poisonus_plague_damage.item": "%1$s was killed from plague by %2$s using %3$s",
       "effect.poison_madness.hyperfixation": "Hyperfixation",
-      "item.poison_madness.black_lizard_bowl": "Dark Lizard Bowl",
+      "item.poison_madness.black_lizard_bowl": "Green Lizard Bowl",
       "effect.poison_madness.coma": "Coma",
       "effect.poison_madness.hypersalivation": "Hypersalivation",
       "effect.poison_madness.grill_lungs": "Grill Lungs",
@@ -4438,6 +4735,7 @@
       "item.poison_madness.just_used_for_texture": "Just Used For Texture",
       "advancements.taste_the_rainbow.descr": "Lick any frog",
       "effect.poison_madness.leach": "Life Leach",
+      "item.poison_madness.black_2_lizard_bowl": "Black Lizard Bowl",
       "effect.seventh_ancient_ways_sub.batrachotoxin": "batrachotoxin",
       "entity.poison_madness.poison_frog_red": "Poison Frog Red",
       "entity.poison_madness.lizard_black": "Poison Lizard Black",
@@ -4462,8 +4760,10 @@
       "entity.poison_madness.poison_frog_crimson": "Poison Frog Crimson",
       "entity.seventh_ancient_ways_sub.poison_frog_golden": "Poison Frog Golden",
       "death.attack.thermogenesis_damage.item": "%1$s was killed from termogenesis by %2$s using %3$s",
+      "effect.poison_madness.combustion": "Combustion",
       "gui.poison_madness.poison_craft_gui.label_poison_darts": "Poison Darts",
       "entity.poison_madness.poison_frog_green": "Poison Frog Green",
+      "item.poison_madness.brown_lizard_bowl": "Brown Lizard Bowl",
       "item.poison_madness.blue_frog_bowl": "Blue Frog Bowl",
       "entity.poison_madness.poison_frog_yellow": "Poison Frog Yellow",
       "effect.poison_madness.vulnerability": "Vulnerability",
@@ -4489,6 +4789,7 @@
       "advancements.dart_makin.descr": "Craft a Dart(you can right click any poisonus frog  to add their poison to this dart)",
       "effect.poison_madness.reanimating_toxin": "Reanimation Toxin",
       "subtitles.fillfrogbowl": "",
+      "item.poison_madness.lizard_brown_spawn_egg": "Poison Lizard Brown Spawn Egg",
       "item.poison_madness.dartstadart": "Dart",
       "death.attack.batrachotoxindamage.item": "%1$s was killed by %2$s using batrachotoxin poison",
       "death.attack.poisonus_plague_damage.player": "%1$s died from plague whilst trying to escape %2$s",
@@ -4496,6 +4797,7 @@
       "item.poison_madness.poison_frog_yellow_spawn_egg": "Poison Frog Yellow Spawn Egg",
       "item.poison_madness.pink_frog_bowl": "Pink Frog Bowl",
       "item.poison_madness.coated_dart": "Coated Dart",
+      "entity.poison_madness.lizard_black_2": "Poison Lizard Black",
       "entity.seventh_ancient_ways_sub.poison_frog_blue": "Poison Frog Blue",
       "effect.poison_madness.vanish": "Vanish",
       "item.poison_madness.poison_frog_blue_spawn_egg": "Poison Frog Blue Spawn Egg",
@@ -4507,6 +4809,7 @@
       "entity.poison_madness.green_toad": "Poison Frog Golden",
       "effect.poison_madness.batrachotoxin": "batrachotoxin",
       "entity.poison_madness.spider_black": "Spider Black",
+      "subtitles.dartthrow": "",
       "entity.poison_madness.poison_frog_dark_purple": "Poison Frog Dark Purple",
       "item.poison_madness.poison_frog_pink_spawn_egg": "Poison Frog Pink Spawn Egg",
       "item.poison_madness.violet_frog_bowl": "Violet-Orange Frog Bowl",
@@ -4518,6 +4821,7 @@
       "item_group.seventh_ancient_ways_sub.pick_your_poison": "Pick Your Poison",
       "item.poison_madness.poison_frog_red_white_spawn_egg": "Poison Frog Red-White Spawn Egg",
       "gui.poison_madness.poison_craft_gui.button_copy_poison": "Copy Poison",
+      "entity.poison_madness.lizard_brown": "Poison Lizard Brown",
       "entity.poison_madness.poison_frog_common": "Poison Frog Dark Green",
       "subtitles.frogambient": "Frog ambient sound",
       "subtitles.coatdart": "",
@@ -4531,7 +4835,8 @@
       "subtitles.empty": "",
       "death.attack.stimulation_damage.item": "%1$s was killed by %2$s using %3$s because of overstimulation",
       "subtitles.hypersalivation_audio": "",
-      "item.poison_madness.black_spider_bowl": "Black Spider Bowl"
+      "item.poison_madness.black_spider_bowl": "Black Spider Bowl",
+      "item.poison_madness.lizard_black_2_spawn_egg": "Poison Lizard Black Spawn Egg"
     }
   },
   "foldersRoot": {
@@ -4603,6 +4908,14 @@
         "children": [
           {
             "name": "Black",
+            "children": []
+          },
+          {
+            "name": "Brown",
+            "children": []
+          },
+          {
+            "name": "Green",
             "children": []
           }
         ]

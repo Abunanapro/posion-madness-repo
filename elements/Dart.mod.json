@@ -10,11 +10,11 @@
       "value": "CUSTOM:throwdart"
     },
     "igniteFire": false,
-    "power": 1.0,
-    "damage": 1.9,
+    "power": 0.8,
+    "damage": 1.4000000000000001,
     "knockback": 1,
-    "entityModel": "Default",
-    "customModelTexture": "",
+    "entityModel": "Modeldart",
+    "customModelTexture": "dart3.png",
     "onHitsEntity": {
       "name": "DartProjectileHitsLivingEntity"
     }
