@@ -1,0 +1,36 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "poison_madness:poison_codex"
+    },
+    "title": {
+      "translate": "advancements.welcome_to_poison_madness.title"
+    },
+    "description": {
+      "translate": "advancements.welcome_to_poison_madness.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "welcome_to_poison_madness": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "poison_madness:entities/book_get"
+    ],
+    "recipes": [
+      "poison_madness:dartrecipy",
+      "poison_madness:poison_codex_recipy"
+    ]
+  }
+}

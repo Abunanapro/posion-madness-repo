@@ -155,10 +155,7 @@
         "value": "river"
       },
       {
-        "value": "forest"
-      },
-      {
-        "value": "swamp"
+        "value": "beaches"
       }
     ],
     "spawnInDungeons": false

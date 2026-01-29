@@ -71,7 +71,7 @@ public class PoisonMadnessModEntities {
 
 					.sized(0.6f, 0.5f));
 	public static final RegistryObject<EntityType<PoisonFrogDarkEntity>> POISON_FROG_DARK = register("poison_frog_dark",
-			EntityType.Builder.<PoisonFrogDarkEntity>of(PoisonFrogDarkEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PoisonFrogDarkEntity::new)
+			EntityType.Builder.<PoisonFrogDarkEntity>of(PoisonFrogDarkEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PoisonFrogDarkEntity::new)
 
 					.sized(0.6f, 0.5f));
 	public static final RegistryObject<EntityType<PoisonFrogVioletEntity>> POISON_FROG_VIOLET = register("poison_frog_violet",
@@ -112,7 +112,7 @@ public class PoisonMadnessModEntities {
 
 					.sized(0.6f, 0.5f));
 	public static final RegistryObject<EntityType<LizardBlack2Entity>> LIZARD_BLACK_2 = register("lizard_black_2",
-			EntityType.Builder.<LizardBlack2Entity>of(LizardBlack2Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LizardBlack2Entity::new)
+			EntityType.Builder.<LizardBlack2Entity>of(LizardBlack2Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LizardBlack2Entity::new)
 
 					.sized(0.6f, 0.5f));
 	public static final RegistryObject<EntityType<LizardBrownEntity>> LIZARD_BROWN = register("lizard_brown",

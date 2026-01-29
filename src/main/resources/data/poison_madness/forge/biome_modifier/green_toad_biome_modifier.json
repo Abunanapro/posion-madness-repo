@@ -2,8 +2,7 @@
   "type": "forge:add_spawns",
   "biomes": [
     "river",
-    "forest",
-    "swamp"
+    "beach"
   ],
   "spawners": {
     "type": "poison_madness:green_toad",

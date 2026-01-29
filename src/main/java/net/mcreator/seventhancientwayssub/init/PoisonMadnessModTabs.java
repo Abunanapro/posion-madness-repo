@@ -62,6 +62,7 @@ public class PoisonMadnessModTabs {
 				tabData.accept(PoisonMadnessModItems.LIZARD_BROWN_SPAWN_EGG.get());
 				tabData.accept(PoisonMadnessModItems.LIGHT_GREEN_TOAD_SPAWN_EGG.get());
 				tabData.accept(PoisonMadnessModItems.LIGHT_GREEN_TOAD_BOWL.get());
+				tabData.accept(PoisonMadnessModItems.POISON_CODEX.get());
 			})
 
 					.build());

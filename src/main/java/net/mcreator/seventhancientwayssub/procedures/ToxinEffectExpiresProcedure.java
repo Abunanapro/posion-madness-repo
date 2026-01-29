@@ -10,6 +10,6 @@ public class ToxinEffectExpiresProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 2));
+			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 180, 2));
 	}
 }

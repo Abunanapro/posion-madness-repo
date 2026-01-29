@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Overcharged Legs",
+    "effectName": "Bouncy",
     "icon": "overchargedlegs.png",
     "color": {
       "value": -14745856,

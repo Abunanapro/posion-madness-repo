@@ -10,6 +10,6 @@ public class NeurotoxinOnEffectActiveTickProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 100, 1));
+			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 1, 1));
 	}
 }

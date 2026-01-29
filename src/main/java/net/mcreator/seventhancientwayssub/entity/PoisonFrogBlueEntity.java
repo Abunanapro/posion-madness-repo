@@ -18,7 +18,7 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
@@ -94,7 +94,7 @@ public class PoisonFrogBlueEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 1, 40));
 		this.goalSelector.addGoal(2, new LeapAtTargetGoal(this, (float) 0.5));
 		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(4, new FloatGoal(this));
@@ -191,7 +191,7 @@ public class PoisonFrogBlueEntity extends PathfinderMob implements GeoEntity {
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && this.onGround()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.poison_dart_frog.idle"));
 			}
 			if (this.isInWaterOrBubble()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.poison_dart_frog.swim"));

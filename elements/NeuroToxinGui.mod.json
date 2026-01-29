@@ -3,25 +3,7 @@
   "_type": "overlay",
   "definition": {
     "priority": "LOW",
-    "components": [
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_return_time_left",
-          "text": {
-            "fixedValue": "",
-            "name": "ReturnTimeLeft"
-          },
-          "color": {
-            "value": -8901929,
-            "falpha": 0.0
-          },
-          "anchorPoint": "CENTER",
-          "x": 165,
-          "y": 62
-        }
-      }
-    ],
+    "components": [],
     "baseTexture": "stmch.png",
     "overlayTarget": "Ingame",
     "displayCondition": {

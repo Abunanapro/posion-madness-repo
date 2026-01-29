@@ -1,0 +1,53 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 172,
+    "height": 162,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_leftnewback",
+          "image": "leftnewback.png",
+          "hoveredImage": "leftnewback_on.png",
+          "onClick": {
+            "name": "BackToIndex"
+          },
+          "x": 42,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "comingsoon.png",
+          "use1Xscale": false,
+          "x": 69,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "iconmod.png",
+          "use1Xscale": false,
+          "x": 258,
+          "y": 80
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

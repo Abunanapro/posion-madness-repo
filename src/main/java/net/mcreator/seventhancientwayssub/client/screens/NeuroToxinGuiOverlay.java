@@ -15,7 +15,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.seventhancientwayssub.procedures.ReturnTimeLeftProcedure;
 import net.mcreator.seventhancientwayssub.procedures.NeuroToxinGuiDisplayOverlayIngameProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -46,9 +45,6 @@ public class NeuroToxinGuiOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (NeuroToxinGuiDisplayOverlayIngameProcedure.execute(entity)) {
 			event.getGuiGraphics().blit(new ResourceLocation("poison_madness:textures/screens/stmch.png"), 0, 0, 0, 0, w, h, w, h);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
-
-					ReturnTimeLeftProcedure.execute(entity), w / 2 + -48, h / 2 + -58, -8901929, false);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    "cde",
+    "abb"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:small_flowers"
+    },
+    "b": {
+      "tag": "minecraft:leaves"
+    },
+    "c": {
+      "item": "minecraft:ink_sac"
+    },
+    "d": {
+      "item": "minecraft:book"
+    },
+    "e": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "poison_madness:poison_codex",
+    "count": 1
+  }
+}

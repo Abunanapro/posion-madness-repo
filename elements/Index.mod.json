@@ -1,0 +1,257 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 162,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sample",
+          "text": "Frogs",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GoFrogs"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 233,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quest_gui.png",
+          "use1Xscale": false,
+          "x": 69,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "frogicon.png",
+          "use1Xscale": false,
+          "x": 289,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_welcome_to_the_poison_codex",
+          "text": {
+            "fixedValue": "Welcome to the poison "
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 84,
+          "y": 54
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_codex",
+          "text": {
+            "fixedValue": "codex"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 84,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_here_you_will_find",
+          "text": {
+            "fixedValue": "Here you will find all"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 84,
+          "y": 85
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_poisonouse_species",
+          "text": {
+            "fixedValue": "the poisonouse species"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 83,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_that_this_mod_adds",
+          "text": {
+            "fixedValue": "that Poison Madness"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 83,
+          "y": 109
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "iconfrog2.png",
+          "use1Xscale": false,
+          "x": 316,
+          "y": 58
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sample1",
+          "text": "Lizards",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GoLizards"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 233,
+          "y": 93
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "iconmod.png",
+          "use1Xscale": false,
+          "x": 109,
+          "y": 124
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sample2",
+          "text": "Toads",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GoToads"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 232,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sample3",
+          "text": "Spiders",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GoComingSoon"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 232,
+          "y": 155
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_adds",
+          "text": {
+            "fixedValue": "adds."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 84,
+          "y": 122
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lizardicon.png",
+          "use1Xscale": false,
+          "x": 288,
+          "y": 88
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "iconlizard.png",
+          "use1Xscale": false,
+          "x": 316,
+          "y": 88
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "toadicon.png",
+          "use1Xscale": false,
+          "x": 289,
+          "y": 120
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spicericon.png",
+          "use1Xscale": false,
+          "x": 288,
+          "y": 149
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rightnewnext",
+          "image": "rightnewnext.png",
+          "hoveredImage": "rightnewnext_on.png",
+          "onClick": {
+            "name": "GonextIndex2"
+          },
+          "x": 355,
+          "y": 104
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

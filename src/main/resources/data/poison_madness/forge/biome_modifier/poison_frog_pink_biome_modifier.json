@@ -1,10 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": [
-    "jungle",
-    "bamboo_jungle",
-    "sparse_jungle"
-  ],
+  "biomes": "cherry_grove",
   "spawners": {
     "type": "poison_madness:poison_frog_pink",
     "weight": 20,
