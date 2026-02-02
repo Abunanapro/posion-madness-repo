@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Poison Frog Yellow",
+    "mobName": "Yellow Poison Frog",
     "mobLabel": "",
     "mobModelTexture": "yellow.png",
     "mobModelGlowTexture": "",
@@ -155,7 +155,13 @@
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [
       {
-        "value": "desert"
+        "value": "bamboo_jungle"
+      },
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "jungle_edge"
       }
     ],
     "spawnInDungeons": false

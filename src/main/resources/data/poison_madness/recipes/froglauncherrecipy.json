@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    "cde",
+    "fbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:ochre_froglight"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:piston"
+    },
+    "d": {
+      "item": "minecraft:slime_block"
+    },
+    "e": {
+      "item": "minecraft:verdant_froglight"
+    },
+    "f": {
+      "item": "minecraft:pearlescent_froglight"
+    }
+  },
+  "result": {
+    "item": "poison_madness:frog_launcher",
+    "count": 1
+  }
+}

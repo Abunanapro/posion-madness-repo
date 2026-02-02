@@ -6,14 +6,19 @@ package net.mcreator.seventhancientwayssub.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.seventhancientwayssub.PoisonMadnessMod;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PoisonMadnessModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PoisonMadnessMod.MODID);
 	public static final RegistryObject<CreativeModeTab> PICK_YOUR_POISON = REGISTRY.register("pick_your_poison",
@@ -54,10 +59,8 @@ public class PoisonMadnessModTabs {
 				tabData.accept(PoisonMadnessModItems.LIZARD_BLACK_SPAWN_EGG.get());
 				tabData.accept(PoisonMadnessModItems.GREEN_TOAD_SPAWN_EGG.get());
 				tabData.accept(PoisonMadnessModItems.SPIDER_BLACK_SPAWN_EGG.get());
-				tabData.accept(PoisonMadnessModItems.COATED_DART.get());
 				tabData.accept(PoisonMadnessModBlocks.RITUAL_TABLE_CENTER.get().asItem());
 				tabData.accept(PoisonMadnessModItems.POISON_FROG_RED_WHITE_SPAWN_EGG.get());
-				tabData.accept(PoisonMadnessModBlocks.POISON_CRAFT_TABLE.get().asItem());
 				tabData.accept(PoisonMadnessModItems.LIZARD_BLACK_2_SPAWN_EGG.get());
 				tabData.accept(PoisonMadnessModItems.LIZARD_BROWN_SPAWN_EGG.get());
 				tabData.accept(PoisonMadnessModItems.LIGHT_GREEN_TOAD_SPAWN_EGG.get());
@@ -66,4 +69,12 @@ public class PoisonMadnessModTabs {
 			})
 
 					.build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+
+		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(PoisonMadnessModItems.FROG_LAUNCHER.get());
+		}
+	}
 }

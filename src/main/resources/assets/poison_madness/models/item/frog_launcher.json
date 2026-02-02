@@ -1,0 +1,6 @@
+{
+  "parent": "poison_madness:displaysettings/frog_cannon",
+  "textures": {
+    "layer0": "poison_madness:item/frogcanonimage"
+  }
+}

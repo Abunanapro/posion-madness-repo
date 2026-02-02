@@ -1,6 +1,9 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "mangrove_swamp",
+  "biomes": [
+    "mangrove_swamp",
+    "swamp"
+  ],
   "spawners": {
     "type": "poison_madness:light_green_toad",
     "weight": 20,

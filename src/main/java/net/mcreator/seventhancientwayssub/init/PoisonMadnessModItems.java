@@ -32,6 +32,7 @@ import net.mcreator.seventhancientwayssub.item.JustUsedForTextureItem;
 import net.mcreator.seventhancientwayssub.item.GreenToadBowlItem;
 import net.mcreator.seventhancientwayssub.item.GoldenFrogBowlItem;
 import net.mcreator.seventhancientwayssub.item.GeenFrogBowlItem;
+import net.mcreator.seventhancientwayssub.item.FrogLauncherItem;
 import net.mcreator.seventhancientwayssub.item.DartstadartItem;
 import net.mcreator.seventhancientwayssub.item.DarkPurpleFrogBowlItem;
 import net.mcreator.seventhancientwayssub.item.DarkFrogBowlItem;
@@ -101,6 +102,7 @@ public class PoisonMadnessModItems {
 	public static final RegistryObject<Item> LIGHT_GREEN_TOAD_SPAWN_EGG = REGISTRY.register("light_green_toad_spawn_egg", () -> new ForgeSpawnEggItem(PoisonMadnessModEntities.LIGHT_GREEN_TOAD, -16711936, -16764160, new Item.Properties()));
 	public static final RegistryObject<Item> LIGHT_GREEN_TOAD_BOWL = REGISTRY.register("light_green_toad_bowl", () -> new LightGreenToadBowlItem());
 	public static final RegistryObject<Item> POISON_CODEX = REGISTRY.register("poison_codex", () -> new PoisonCodexItem());
+	public static final RegistryObject<Item> FROG_LAUNCHER = REGISTRY.register("frog_launcher", () -> new FrogLauncherItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

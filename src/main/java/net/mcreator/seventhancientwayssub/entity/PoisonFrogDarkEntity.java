@@ -161,7 +161,7 @@ public class PoisonFrogDarkEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		PoisonFrogGoldenOnEntityTickUpdateProcedure.execute(this);
+		PoisonFrogGoldenOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 
